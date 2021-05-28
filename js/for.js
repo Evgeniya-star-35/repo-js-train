@@ -40,15 +40,33 @@ for (let i = 1; i <= employees; i += 1) {
 // 3.если число 1441,то выводим 24.1
 // 4.если число 1382 ,то 23.02
 
-let number = Number(prompt('Введите число'));
+// let number = Number(prompt('Введите число'));
 
-if (number = 70 ) {
-    console.log('1:10');
+// if (number = 70 ) {
+//     console.log('1:10');
 
- } else if (number = 450) {
-    console.log('7:30');
- } else if (number = 1441) {
-    console.log('24:01');
- } else if (number = 1382) {
-    console.log('23:02');
- }
+//  } else if (number = 450) {
+//     console.log('7:30');
+//  } else if (number = 1441) {
+//     console.log('24:01');
+//  } else if (number = 1382) {
+//     console.log('23:02');
+// }
+ 
+
+
+// for (let i = 0; i <= 1441; i += 1) {
+//    let hour = i / 60;
+//    let minutes = i % 60;
+//    if (i === 70) {
+
+//       console.log(Now ${ Math.floor(hour) }: ${ minutes });
+
+//    } else if (i === 450) {
+//       console.log(Now ${ Math.floor(hour) }: ${ minutes });
+
+//    } else if (i === 1441) {
+//       console.log(Now ${ Math.floor(hour) }: ${ minutes });
+//       break;
+//    }
+// }
