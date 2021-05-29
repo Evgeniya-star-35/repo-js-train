@@ -1,5 +1,5 @@
-let result = 0.1 + 0.2;
-console.log(result);
+// let result = 0.1 + 0.2;
+// console.log(result);
 // console.log(Math.floor) // кругляет в меньшую сторону и дает только целую часть(0)
 // console.log(Math.ceil) //округляет к большему (1)
 // console.log(Math.random)
@@ -11,3 +11,13 @@ console.log(result);
 // console.log(name);
 // console.log(sliceName)
 
+///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbiggestNumberxxxxxxxxxxxxxxxxxxxxx
+const numbers = [89, 52, 63, 48, 120, 11, 22];
+let smallestNumber = numbers[0];
+
+for (const number of numbers) {
+    if (number < smallestNumber) {
+        smallestNumber = number;
+    }
+}
+console.log('smallestNumber: ' , smallestNumber);
