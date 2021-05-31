@@ -12,12 +12,14 @@
 // console.log(sliceName)
 
 ///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbiggestNumberxxxxxxxxxxxxxxxxxxxxx
-const numbers = [89, 52, 63, 48, 120, 11, 22];
-let smallestNumber = numbers[0];
+// const numbers = [89, 52, 63, 48, 120, 11, 22];
+// let smallestNumber = numbers[0];
 
-for (const number of numbers) {
-    if (number < smallestNumber) {
-        smallestNumber = number;
-    }
-}
-console.log('smallestNumber: ' , smallestNumber);
+// for (const number of numbers) {
+//     if (number < smallestNumber) {
+//         smallestNumber = number;
+//     }
+// }
+// console.log('smallestNumber: ' , smallestNumber);
+
+///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbiggestNumberxxxxxxxxxxxxxxxxxxxxx
