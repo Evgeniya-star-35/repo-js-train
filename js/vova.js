@@ -22,4 +22,29 @@
 // }
 // console.log('smallestNumber: ' , smallestNumber);
 
-///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbiggestNumberxxxxxxxxxxxxxxxxxxxxx
+///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx spred-operator разбивает массив поэлементно и по очереди вставляет внутрь другого массива xxxxxxxxxxxxxxxxxxxxx
+// const newClients = ['monkong', 'singu'];
+// const oldClients = ['mango', 'ajax', 'poly', ...newClients, 'kiwi'];
+// console.log(oldClients);
+// можно ...переменную с массивом вставлять в любое место массива,в который мы вставляем!
+
+
+///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  метод slice xxxxxxxxxxxxxxxxxxxxx
+
+// const numbers = [7, 3, 8, 9, 2];
+// console.log(numbers.slice(3));
+// console.log(numbers);
+
+///xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   базовые операции с массивом xxxxxxxxxxxxxxxxxxxxx
+
+// создайте массив styles с элементами "джаз" и "блюз"
+// добавьте "Рок-н-ролл" в конец. 
+// замените значение в середине на "классика"
+// удалите первый элемент и выведите его в консоль
+// вставьте "рэп" и "регги" в начало массива
+// массив по ходу выполнения операций:
+// Джаз,Блюз
+// Джаз,Блюз,Рок-н-ролл
+//  Джаз,Классика,Рок-н-ролл
+// классика, рок-н-ролл  
+// рэп, реггби, классика, рок-н-ролл
