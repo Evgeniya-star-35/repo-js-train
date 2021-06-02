@@ -65,15 +65,15 @@
 // нумерация элементов должна начинаться с единицы.
 // напиши код,который ищет самое маленькое число в массиве
  
-const users = ['Mango', 'Poly', 'Ajax'];
-for (let i = 0; i < users.length; i += 1) {
-    console.log('index', i);
-    console.log('value', users[i]);
-}
-// xxx or xxx
-for (let user of users) {
-    console.log('index', users.indexOf(user));
-    console.log(user);
-}
-
+// const users = ['Mango', 'Poly', 'Ajax'];
+// for (let i = 0; i < users.length; i += 1) {
+//     console.log('index', i);
+//     console.log('value', users[i]);
+// }
+// // xxx or xxx
+// for (let user of users) {
+//     console.log('index', users.indexOf(user));
+//     console.log(user);
+// }
+///xxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxx
 
