@@ -49,13 +49,31 @@
 // классика, рок-н-ролл  
 // рэп, реггби, классика, рок-н-ролл
 
-const styles = ["джаз", "блюз"];
-styles.push("Рок-н-ролл");
-styles.splice(1, 1, "классика");
-// styles[1] = "классика";
-const deletedStyles = styles.shift(); /*создаем переменную,если надо потом удаленный элемент использовать дальше*/
+// const styles = ["джаз", "блюз"];
+// styles.push("Рок-н-ролл");
+// styles.splice(1, 1, "классика");
+// // styles[1] = "классика";
+// const deletedStyles = styles.shift(); /*создаем переменную,если надо потом удаленный элемент использовать дальше*/
 
-console.log(deletedStyles);
-styles.unshift("рэп", "регги");
-console.log(styles);
+// console.log(deletedStyles);
+// styles.unshift("рэп", "регги");
+// console.log(styles);
+
+///xxxxxxxxxxxxxxx цикл for xxxxxxxxxxxxxxxx
+// напиши функцию,которая получает массив и использует цикл фор,который для каждого
+//элемента будет выводить в консоль сообщение в формате номер элемента-значение элемента
+// нумерация элементов должна начинаться с единицы.
+// напиши код,который ищет самое маленькое число в массиве
+ 
+const users = ['Mango', 'Poly', 'Ajax'];
+for (let i = 0; i < users.length; i += 1) {
+    console.log('index', i);
+    console.log('value', users[i]);
+}
+// xxx or xxx
+for (let user of users) {
+    console.log('index', users.indexOf(user));
+    console.log(user);
+}
+
 
