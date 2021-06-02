@@ -48,3 +48,14 @@
 //  Джаз,Классика,Рок-н-ролл
 // классика, рок-н-ролл  
 // рэп, реггби, классика, рок-н-ролл
+
+const styles = ["джаз", "блюз"];
+styles.push("Рок-н-ролл");
+styles.splice(1, 1, "классика");
+// styles[1] = "классика";
+const deletedStyles = styles.shift(); /*создаем переменную,если надо потом удаленный элемент использовать дальше*/
+
+console.log(deletedStyles);
+styles.unshift("рэп", "регги");
+console.log(styles);
+
