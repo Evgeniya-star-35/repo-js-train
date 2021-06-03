@@ -75,5 +75,19 @@
 //     console.log('index', users.indexOf(user));
 //     console.log(user);
 // }
-///xxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxx
+///xxxxxxxxxxxxxxx является ли строка полиндромом xxxxxxxxxxxxxxxx
+
+// const str = 'довод';
+// const newString = 'Hello';
+// 1.сделать из строки массив
+// 2.перевернуть массив наоборот.
+// 3.сравнить 2 строки
+
+// const array = str.split('');
+// array.reverse();
+// const reverseString = array.join('');
+// console.log(str === reverseString);
+// xxxxxxxxxx или xxxxxxxxxxxxxxxxx
+// const reverseStringWithChaining = str.split('').reverse().join('');
+// console.log(str === reverseStringWithChaining);
 
