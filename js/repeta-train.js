@@ -138,3 +138,5 @@ const hotel = {
 // }
 
 // console.log(total); // 20
+
+// / xxxxxxxxxxxx
