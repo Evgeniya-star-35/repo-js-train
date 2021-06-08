@@ -76,6 +76,8 @@
 //   };
 // console.log(array(nums, strs));
 
+//  TASK какой-то
+// привести массив к одному уровню
 // const tryThis = [
 //     [23, 11, ["hello", "world", "Vasya"]],
 //     "some str",
