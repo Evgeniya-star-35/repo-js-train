@@ -62,9 +62,77 @@
 
 // console.log(labels); // ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"]
 
+              // callback 
+
+// const fnA = function (callback) {
+//     // console.log(message);
+//     console.log(callback);
+//     callback(100);
+// };
+// const fnB = function (number) {
+//     console.log('Этот лог при вызове fnB', number);
+// };
+// fnA(fnB);
+
+// const doMath = function (a, b, callback) {
+//     const result = callback(a, b);
+//     console.log(result);
+// };
+// const add = function (x, y) {
+//     return x + y;
+// };
+// const sub = function (x, y) {
+//     return x - y;
+// };
+// doMath(2, 3, add);
+// doMath(10, 8, sub);
 
 
-// Фильтрация массива
+// анонимные функции как можно иначе вызвать функцию инлайн фу-я
+// doMath(2, 3, function (x, y) {
+//     return x + y;
+// });
+
+
+
+// Отложенный вызов: регистрация событий вешаем слушателя
+
+// const buttonRef = document.querySelector('js-button');
+// const handleBtnClick = function () {
+//     console.log('клик по кнопке');
+// };
+// buttonRef.addEventListener('click', handleBtnClick);
+
+// Отложенный вызов : геолокация
+
+
+// const onGetPositionSuccess = function (position) {
+//     console.log(position);
+// };
+// const onGetPositionError = function (error) {
+//     console.log(error);
+// };
+// window.navigator.geolocation.getCurrentPosition(
+//     onGetPositionSuccess,
+//     onGetPositionError,
+// );
+
+// Если выбираешь получить геопозицию,то успех,если не согласишься-ошибка
+
+
+             // отложенный вызов : интервалы
+// const callback = function () {
+//     console.log("Через 2 секунды внутри коллбека в таймауте");
+// };
+// console.log("в коде перед тайм - аутом");
+// setTimeout(callback, 2000);
+// console.log("в коде после тайм-аута");  
+
+
+
+
+
+
 
 
 
