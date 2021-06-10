@@ -31,18 +31,96 @@
 // };
 // showTag();
 
-const user = {
-    tag: 'Mango',
-    showTag() {
-        console.log('showTag -> this', this);
-    console.log('showTag -> this.tag', this.tag);
-    },
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//         console.log('showTag -> this', this);
+//     console.log('showTag -> this.tag', this.tag);
+//     },
+// };
+
+// user.showTag();
+
+// // если ф-я вызвалась без контекста объекта- будет undefined
+
+// const outerShowTag = user.showTag;
+
+// outerShowTag();
+
+
+
+//  Контекст в callback - ф-ях
+
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//     console.log('showTag -> this', this);
+//     console.log('showTag -> this.tag', this.tag);
+//     },
+// };
+// const invokeAction = action => {
+//     console.log(action);
+//     action()
+// };
+// invokeAction(user.ShowTag);
+
+// xxxxxxxxxxxxxxxxxxxxxx
+
+// const makeChangeColor = () => {
+//     const changeColor = color => {
+//         console.log('changeColor -> this', this);
+//         // this.color = color;
+//     };
+//     // changeColor();
+
+// const sweater = {
+//     color: 'teal',
+//     };
+    
+//     sweater.updateColor = changeColor;
+//     // sweater.updateColor('red');
+// return sweater.updateColor;
+// };
+
+
+
+// const swapColor = makeChangeColor();
+// swapColor('blue');
+
+// const counter = {}
+
+
+
+
+                       // Методы функции 
+           // call apply
+
+const showThis = function () {
+
+    console.log('showThis -> this', this);
+
+};
+// showThis();
+
+const objA = {
+    a: 5,
+    b: 10,
 };
 
-user.showTag();
+showThis.call(objA);
 
-// если ф-я вызвалась без контекста объекта- будет undefined
+const changeColor = function (color) {
+        console.log('changeColor -> this', this);
+        this.color = color;
+    };
 
-const outerShowTag = user.showTag;
 
-outerShowTag();
+    const hat = {
+    color: 'black',
+};
+    
+changeColor.call(hat, 'orange');
+
+    const sweater = {
+    color: 'green',
+    };
