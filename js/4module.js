@@ -186,11 +186,141 @@
 
 // хххххххххххххххх   ЗАМЫКАНИЯ   хххххххххххххххххх
 
-const fnA = function (parametr) {
-    const innerVariable = "значение внутренней переменной функции fnA";
-    return innerFunction = function () {
+// const fnA = function (parametr) {
+//     const innerVariable = "значение внутренней переменной функции fnA";
+//     const innerFunction = function () {
+//         console.log(parametr);
+//         console.log(innerVariable);
+//         console.log('Это вызов innerFunction');
+//     };
+//     return innerFunction;
+// };
+// const fnB = fnA(555);
+
+// fnB();
+// console.log(fnB);
+
+// const makeDish = function (sheffName, dish) {
+//     console.log(`${sheffName} готовит ${dish}`);
+// };
+// makeDish('Mango', 'пирожок');
+// makeDish('Mango', 'омлет');
+// makeDish('Mango', 'чай');
+
+// makeDish('Poly', 'котлеты');
+// makeDish('Poly', 'супик');
+// makeDish('Poly', 'кофе');
+
+// const makeSheff = function (name) {
+//     const makeDish = function (dish) {
+//         console.log(`${name} готовит ${dish}`);
+//     };
+//     return makeDish;
+// };
+// const mango = makeSheff('Mango');
+
+
+// mango('котлеты');
+// mango('пирожок');
+
+// console.dir(mango);
+
+// const poly = makeSheff('Poly');
+// poly('tea');
+// poly('cupcake');
+
+
+// ххххххххххххх   ОКРУГЛЯТОР  хххххххххххххххххххх
+
+// const floatingPoint = 3.456789;
+// const someInt = Math.round(floatingPoint);
+// const withDecimals = Number(floatingPoint.toFixed(2));
+
+// const rounder = function (mumber, places) {
+//     return Number(number.toFixed(places));
+// };
+
+
+
+// const rounder = function (places) {
+//     return function (number) {
+//         return  Number(number.toFixed(places))
+
+//     }  
+// }
+
+// const rounder2 = rounder(2);
+// const rounder3 = rounder(3);
+
+// console.log(rounder2(3.4567));
+// console.log(rounder2(3.4567));
+// console.log(rounder3(5.1234));
+
+//    Зарплата защита данных приватные переменные
+
+// const salaryManagerFactory = function (employeeName, baseSalary) {
+//     let salary = baseSalary;
+
+//     const changeBy = function (amount) {
+//         salary += amount;
+//     };
+//     return {
+//         raise(amount) {
+//             salary += amount;
+//         },
     
-}
-};
+//         lower(amount) {
+//             salary -= amount;
+//         },
+//         current() {
+//             return `Текущая зарплата ${employeeName} - ${salary}`;
+//         },
+//     };
+// };
+ 
+               //   Синтаксис стрелочных функций
+
+// const add = function (a, b, c) {
+//     console.log(a, b, c);
+//     return a + b + c;
+// };
+
+// console.log(add(5, 10, 15));
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx * /если 2 и больше параметров,скобки обязат.
+    // если параметр 1 -не ставим скобки,если параметров нет - пустые скобки
+// const addArrow = (a, b, c) => {  
+    
+//     return a + b + c;
+// };
+
+// хххххххххххххххх =====равны нижней (неявный возврат)
+
+    
+// ххххххххххххх   как получить доступ ко всем аргументам ххх
+
+//     const addArrow = (...args) => {  
+//     console.log(args);
+//     // return a + b + c;
+// };
+// console.log(addArrow(15, 52, 12));
+
+
+// const fnA = function () {
+//     return {
+//         a: 5,
+//     };
+// };
+// console.log(fnA);
+//     // Перепишем на стрелку
+// const arrowFnA = () => {
+//     return {
+//         arrowA: 5,
+//     };
+// };
+// если не нужен явный ретерн и у нас ОБЪЕКТ в теле ф-ии, пишем только так
+// const arrowFnA = () => ({ arrowA: 5 });
+
+// console.log(arrowFnA);
 
 
