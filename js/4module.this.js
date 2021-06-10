@@ -76,7 +76,7 @@
 // const sweater = {
 //     color: 'teal',
 //     };
-    
+
 //     sweater.updateColor = changeColor;
 //     // sweater.updateColor('red');
 // return sweater.updateColor;
@@ -95,32 +95,32 @@
                        // Методы функции 
            // call apply
 
-const showThis = function () {
+// const showThis = function () {
 
-    console.log('showThis -> this', this);
+//     console.log('showThis -> this', this);
 
-};
-// showThis();
+// };
+// // showThis();
 
-const objA = {
-    a: 5,
-    b: 10,
-};
+// const objA = {
+//     a: 5,
+//     b: 10,
+// };
 
-showThis.call(objA);
+// showThis.call(objA);
 
-const changeColor = function (color) {
-        console.log('changeColor -> this', this);
-        this.color = color;
-    };
+// const changeColor = function (color) {
+//         console.log('changeColor -> this', this);
+//         this.color = color;
+//     };
 
 
-    const hat = {
-    color: 'black',
-};
-    
-changeColor.call(hat, 'orange');
+//     const hat = {
+//     color: 'black',
+// };
 
-    const sweater = {
-    color: 'green',
-    };
+// changeColor.call(hat, 'orange');
+
+//     const sweater = {
+//     color: 'green',
+//     };
