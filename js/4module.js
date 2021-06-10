@@ -129,19 +129,19 @@
 // console.log("в коде после тайм-аута");  
 
 
-// *Операция фильтрации ххх
+// *Операция фильтрации ФИЛЬТР ххх
 
-const filter = function (array, test) {
-    const filteredArray = [];
-for (const el of array) {
-    console.log(el);
-    const passed = test(el);
-    if (passed) {
-        filteredArray.push(el);
-    }
-    }
-    return filteredArray;
-};
+// const filter = function (array, test) {
+//     const filteredArray = [];
+// for (const el of array) {
+//     console.log(el);
+//     const passed = test(el);
+//     if (passed) {
+//         filteredArray.push(el);
+//     }
+//     }
+//     return filteredArray;
+// };
 // 1.надо передать ф-ю
 // 2.фун-я получает элемент массива
 // 3.если элемент массива удовлетворяет условию,то ф-я вернет true
@@ -160,9 +160,37 @@ for (const el of array) {
 
 //              фрукты  
 
+// const fruits = [
+//     { name: 'apple', quantity: 200, isFresh: true },
+//     { name: 'grapes', quantity: 150, isFresh: false },
+//     { name: 'bananas', quantity: 100, isFresh: true },
+    
+// ];
+// const filter = function (array, test) {
+//     const filteredArray = [];
+// for (const el of array) {
+//     console.log(el);
+//     const passed = test(el);
+//     if (passed) {
+//         filteredArray.push(el);
+//     }
+//     }
+//     return filteredArray;
+// };
+// const getFruitsWithQuantity = function (fruit) {
+//     return fruit.quantity >= 120;
+// };
+// const r3 = filter(fruits, getFruitsWithQuantity);
+// console.log(r3);
 
 
+// хххххххххххххххх   ЗАМЫКАНИЯ   хххххххххххххххххх
 
-
+const fnA = function (parametr) {
+    const innerVariable = "значение внутренней переменной функции fnA";
+    return innerFunction = function () {
+    
+}
+};
 
 
