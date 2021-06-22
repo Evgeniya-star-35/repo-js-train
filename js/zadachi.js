@@ -108,4 +108,45 @@
 // console.log(countSheep(2));
 // console.log(countSheep(3));
 
+
+// Задача 
+// Задача.Дан массив с числами.Создайте из него новый массив, где останутся лежать только положительные числа.Создайте для этого вспомогательную функцию isPositive(),
+// которая параметром будет принимать число и возвращать true, если число положительное, и false - если отрицательное.
     
+// const numbers = [12, -36, 14, -5, 62];
+
+
+// const isPositive = (number) => {
+   
+//     if (number > 0) {
+//         return true;
+        
+//     } else {
+//         return false;
+//     }
+// };
+// const newNumbers = [];
+// for (let i = 0; i <= numbers.length; i += 1) {
+//     if (isPositive(numbers[i])) {
+//         newNumbers.push(numbers[i]);
+//     }
+    
+// }
+//   console.log(newNumbers);  
+
+
+// Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно больше нуля и меньше 10.
+// Если это так - пусть функция возвращает true, если не так - false.
+
+
+// const isNumberInRange = number => {
+//     if (number > 0 && number < 10) {
+//         return true;
+//     } else {
+//         return false;
+//        }
+//    }
+
+// console.log(isNumberInRange(-45));
+
+
