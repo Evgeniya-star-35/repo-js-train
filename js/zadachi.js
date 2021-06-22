@@ -151,6 +151,66 @@
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+// Given: an array containing hashes of names
+
+// Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
+
+// Example:
+
+// list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// // returns 'Bart, Lisa & Maggie'
+
+// list([ {name: 'Bart'}, {name: 'Lisa'} ])
+// // returns 'Bart & Lisa'
+
+// list([ {name: 'Bart'} ])
+// // returns 'Bart'
+
+// list([])
+// // returns ''
+
+// function list(people){
+//  const names = people.map(({ name }) => name);
+//     const finalName = names.pop();
+   
+//     return names.length
+//         ? names.join(', ') + ' & ' + finalName
+//         : finalName || '';
+// }
+
+
+
+// console.log(list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}]));   //'Bart, Lisa, Maggie, Homer & Marge',"Must work with many names")
+// console.log(list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}])); //'Bart, Lisa & Maggie',"Must work with many names"
+// console.log(list([{name: 'Bart'},{name: 'Lisa'}])); // ( 'Bart & Lisa', "Must work with two names")
+// console.log(list([{name: 'Bart'}])) //('Bart', "Wrong output for a single name")
+// console.log((list([])));  // '', "Must work with no names"
+ 
+// const mySet = new Set([{ a: 1 }, { a: 1 }]);
+// const result = [...mySet];
+// console.log(result);
+  
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+//     function uniqueInOrder(iterable) {
+//   //your code here - remember iterable can be a string or an array
+//   const result = []
+
+//   for(let i = 0; i < iterable.length; i++){
+//     if(iterable[i] !== iterable[i + 1]){
+//       result.push(iterable[i])
+//     }
+//   }
+
+//   return result
+// }
+    
+
+    
+// console.log(uniqueInOrder('AAAABBBCCDAABBB')); //['A','B','C','D','A','B'];
+
 
 
 
