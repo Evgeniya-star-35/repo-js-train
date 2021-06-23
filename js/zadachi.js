@@ -212,8 +212,119 @@
 // console.log(uniqueInOrder('AAAABBBCCDAABBB')); //['A','B','C','D','A','B'];
 
 
+const fn = function () {
+//   console.log("result");
+// };
+// const fnA = fn(); // undefined
+// console.log(fnA);
 
+// // Почему функция fn сама исполняется(в консоли написана лишь строка, где return console.log('result');
+// // и нет места вызова fn), и почему console.log(fnA) - undefind
 
+// 1) Написать ф - ю конструктор которая создает обект person с такими ключами
+// const person = {
+//   firstName,
+//   lastName,
+//   age,
+//   gender,
+//   interest,
+//   bio() {
+//     // виводить строку Привет {имя} мне {возраст} лет. Мне нравится {интерес}
+//   },
+//   greeting() {
+//     // Привет, я {имя}
+//   },
+// };
+
+// function Person(firstName, lastName, age, gender, interests) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+//   this.gender = gender;
+//   this.interests = interests;
+//   this.greeting = function () {
+//     console.log(`Привет я ${this.firstName} ${this.lastName}`);
+//   };
+//   this.bio = function () {
+//     console.log(
+//       `Привет ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interests}`
+//     );
+//   };
+// }
+
+// function Person(config) {}
+
+// function Person({ firstName, lastName, age, gender, interests }) {
+//   //   this = {}
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+//   this.gender = gender;
+//   this.interests = interests;
+//   this.greeting = function () {
+//     console.log(`Привет я ${this.firstName} ${this.lastName}`);
+//   };
+//   this.bio = function () {
+//     console.log(
+//       `Привет ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interests}`
+//     );
+//   };
+//   // return this
+// }
+
+// function Person(obj) {
+//   //   this = {}
+//   const { firstName, lastName, age, gender, interests } = obj;
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+//   this.gender = gender;
+//   this.interests = interests;
+//   // return this
+// }
+
+// // console.log(`Person`, Person.prototype);
+
+// Person.prototype.greeting = function () {
+//   console.log(`Привет я ${this.firstName} ${this.lastName}`);
+// };
+
+// Person.prototype.bio = function () {
+//   console.log(
+//     `Привет ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interests}`
+//   );
+// };
+
+// const user = new Person({
+//   firstName: "Bob",
+//   lastName: "Dou",
+//   age: 21,
+//   gender: "male",
+//   interests: "football",
+// });
+// console.log(Person.prototype);
+
+// const user2 = new Person({
+//   firstName: "Jack",
+//   lastName: "Dou",
+//   age: 35,
+//   gender: "male",
+//   interests: "basketball",
+// });
+
+    // ххххххххххххххххххххххххххххххххххххххххххххххххххх
+//     Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+// function squareSum(numbers){
+//     const totalNumber = numbers.map(number => Math.pow(number, 2)).reduce((total, number) => total + number, 0);
+//     return totalNumber;
+
+//     };
+
+// console.log(squareSum([1,2])); //5)
+// console.log(squareSum([0, 3, 4, 5])); //50)
+
+    // ххххххххххххххххххххххххххххххххххх
 
 
 
