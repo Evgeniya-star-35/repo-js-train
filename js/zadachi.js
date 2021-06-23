@@ -63,18 +63,18 @@
 
 
 // function descendingOrder(n) {
-    
-   
+
+
 //     const numbers = [];
 //     numbers.push(n);
 //     console.log(Number(numbers.join('').split('').sort().reverse().join('')));
 
-    
-//     return Number(numbers.join('').split('').sort().reverse().join(''));
-   
 
-   
-    
+//     return Number(numbers.join('').split('').sort().reverse().join(''));
+
+
+
+
 
 // }
 
@@ -112,15 +112,15 @@
 // Задача 
 // Задача.Дан массив с числами.Создайте из него новый массив, где останутся лежать только положительные числа.Создайте для этого вспомогательную функцию isPositive(),
 // которая параметром будет принимать число и возвращать true, если число положительное, и false - если отрицательное.
-    
+
 // const numbers = [12, -36, 14, -5, 62];
 
 
 // const isPositive = (number) => {
-   
+
 //     if (number > 0) {
 //         return true;
-        
+
 //     } else {
 //         return false;
 //     }
@@ -130,7 +130,7 @@
 //     if (isPositive(numbers[i])) {
 //         newNumbers.push(numbers[i]);
 //     }
-    
+
 // }
 //   console.log(newNumbers);  
 
@@ -172,7 +172,7 @@
 // function list(people){
 //  const names = people.map(({ name }) => name);
 //     const finalName = names.pop();
-   
+
 //     return names.length
 //         ? names.join(', ') + ' & ' + finalName
 //         : finalName || '';
@@ -185,11 +185,11 @@
 // console.log(list([{name: 'Bart'},{name: 'Lisa'}])); // ( 'Bart & Lisa', "Must work with two names")
 // console.log(list([{name: 'Bart'}])) //('Bart', "Wrong output for a single name")
 // console.log((list([])));  // '', "Must work with no names"
- 
+
 // const mySet = new Set([{ a: 1 }, { a: 1 }]);
 // const result = [...mySet];
 // console.log(result);
-  
+
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -206,13 +206,13 @@
 
 //   return result
 // }
-    
 
-    
+
+
 // console.log(uniqueInOrder('AAAABBBCCDAABBB')); //['A','B','C','D','A','B'];
 
 
-const fn = function () {
+// const fn = function () {
 //   console.log("result");
 // };
 // const fnA = fn(); // undefined
@@ -312,7 +312,7 @@ const fn = function () {
 //   interests: "basketball",
 // });
 
-    // ххххххххххххххххххххххххххххххххххххххххххххххххххх
+// ххххххххххххххххххххххххххххххххххххххххххххххххххх
 //     Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
 // function squareSum(numbers){
@@ -324,7 +324,43 @@ const fn = function () {
 // console.log(squareSum([1,2])); //5)
 // console.log(squareSum([0, 3, 4, 5])); //50)
 
-    // ххххххххххххххххххххххххххххххххххх
+// ххххххххххххххххххххххххххххххххххх
 
+// Welcome.In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+// Note: The function accepts an integer and returns an integer
+
+// function squareDigits(num) {
+//     return +num.toString().split('').map(value => Math.pow(value, 2)).join('');
+
+
+// }
+// console.log(squareDigits(3212));// 9414
+// console.log(squareDigits(2112));//4114
+// console.log(squareDigits(0));// 0
+
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// Given the triangle of consecutive odd numbers:
+// Calculate the sum of the numbers in the nth row of this triangle(starting at index 1) e.g.:
+// 1
+// 3     5
+// 7     9    11
+// 13    15    17    19
+// 21    23    25    27    29
+// ...
+
+// function rowSumOddNumbers(n) {
+//     return Math.pow(n, 3);
+// }
+
+
+
+
+// console.log(rowSumOddNumbers(1));  //1);
+// console.log(rowSumOddNumbers(42));// 74088);
 
 
