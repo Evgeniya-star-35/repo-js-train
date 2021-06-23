@@ -364,3 +364,61 @@
 // console.log(rowSumOddNumbers(42));// 74088);
 
 
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+//Ask a small girl - "How old are you?". She always says strange things... Lets help her!
+
+// For correct answer program should return int from 0 to 9.
+
+// Assume test input string always valid and may look like "1 year old" or "5 years old", etc.. The first char is number only.
+
+// function getAge(inputString) {
+//     // return correct age (int). Happy coding :slight_smile:
+
+//     return Number(inputString.split("")[0]);
+// }
+
+// console.log(getAge("4 years old")); //4
+
+// ххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
+
+// Let's play! You have to return which player won!
+//  In case of a draw return Draw!.
+
+// const rps = (p1, p2) => {
+//     if (p1 == "rock" && p2 == "scissors") {
+//         return "Player 1 won!";
+//     } else if (p1 == "scissors" && p2 == "paper") {
+//         return "Player 1 won!";
+//     } else if (p1 == "paper" && p2 == "rock") {
+//         return "Player 1 won!";
+//     } else if (p2 == "rock" && p1 == "scissors") {
+//         return "Player 2 won!";
+//     } else if (p2 == "scissors" && p1 == "paper") {
+//         return "Player 2 won!";
+//     } else if (p2 == "paper" && p1 == "rock") {
+//         return "Player 2 won!";
+//     } else {
+//         return "Draw!";
+//     }
+// };
+
+// console.log(rps("rock", "scissors"));
+// console.log(rps("scissors", "paper")); //( getMsg(1));
+// console.log(rps("paper", "rock")); // getMsg(1)
+
+// console.log(rps("scissors", "rock")); //getMsg(2);
+// //   (rps('paper', 'scissors'), getMsg(2));
+// //   (rps('rock', 'paper'), getMsg(2));
+
+// console.log(rps("rock", "rock")); //'Draw!;
+// //   (rps('scissors', 'scissors'), 'Draw!');
+// //   (rps('paper', 'paper'), 'Draw!');
+// console.log(rps("mango", "papper")); // Draw!
+
+// хххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
+
+
+
+
