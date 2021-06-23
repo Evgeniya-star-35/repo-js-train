@@ -420,5 +420,86 @@
 // хххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
 
 
+// Build a function that returns an array of integers from n to 1 where n>0.
 
+// Example : n=5 --> [5,4,3,2,1]
+
+// const reverseSeq = (n) => {
+//     const num = [];
+
+//     for (let i = 1; i <= n; i += 1) {
+//         num.push(i);
+
+//         //   console.log(i);
+//     }
+
+//     return num.reverse();
+// };
+
+// console.log(reverseSeq(5)); // [5, 4, 3, 2, 1]
+
+
+// ххххххххххххххххххххххххххххххххххххххххх
+
+
+// function removeChar(str) {
+//     //You got this!
+
+//     console.log(str.slice(1, -1));
+//     return str.slice(1, -1);
+
+// };
+
+
+// removeChar('eloquent');// 'loquen');
+// removeChar('country');// 'ountr');
+// removeChar('person');// 'erso');
+// removeChar('place');// 'lac');
+// removeChar('ooopsss');// 'oopss');
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// // Take 2 strings s1 and s2 including only letters from a to z.Return a new sorted string, the longest possible,
+// //     containing distinct letters - each taken only once - coming from s1 or s2.
+
+
+// function longest(s1, s2) {
+//     const strArr = s1.split('');
+//     const strArr1 = s2.split('')
+//     return [...strArr, ...strArr1].sort().filter((el, index, array) => array.indexOf(el) === index).join('')
+
+
+
+
+// }
+
+// longest("aretheyhere", "yestheyarehere");// "aehrsty")
+// longest("loopingisfunbutdangerous", "lessdangerousthancoding");// "abcdefghilnoprstu")
+// longest("inmanylanguages", "theresapairoffunctions");// "acefghilmnoprstuy")
+
+
+// xxxxxxxxxxxxxxxxxxxxxxx  or xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// function longest(s1, s2) {
+//     let str = new Set([...s1, ...s2]);
+//     return [...str].sort().join('');
+// }
+
+// хххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
+
+// ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+
+// If the function is passed a valid PIN string, return true, else return false.
+
+// function validatePIN(pin) {
+//     //return true or false
+
+//     return /(^\d{4}$)|(^\d{6}$)/.test(pin);
+// }
+
+
+
+// console.log(validatePIN("1234")); //true, "Wrong output for '1234'");
+// console.log(validatePIN("1234567")); //false, "Wrong output for '1234567'")
+// console.log(validatePIN("-1.234")); //false, "Wrong output for '-1.234'")
 
