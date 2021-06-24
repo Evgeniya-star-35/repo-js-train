@@ -12,7 +12,6 @@
 // console.log(array[0] = 'Good bay');
 // console.log(array);
 
-
 // Создайте ассоциативный массив (объект) заработных плат obj. Выведите на экран зарплату Пети и Коли.
 
 //Этот объект дан:
@@ -61,24 +60,15 @@
 
 // Input: 123456789 Output: 987654321
 
-
 // function descendingOrder(n) {
-
 
 //     const numbers = [];
 //     numbers.push(n);
 //     console.log(Number(numbers.join('').split('').sort().reverse().join('')));
 
-
 //     return Number(numbers.join('').split('').sort().reverse().join(''));
 
-
-
-
-
 // }
-
-
 
 // (descendingOrder(0), 0);
 // (descendingOrder(1), 1);
@@ -108,13 +98,11 @@
 // console.log(countSheep(2));
 // console.log(countSheep(3));
 
-
-// Задача 
+// Задача
 // Задача.Дан массив с числами.Создайте из него новый массив, где останутся лежать только положительные числа.Создайте для этого вспомогательную функцию isPositive(),
 // которая параметром будет принимать число и возвращать true, если число положительное, и false - если отрицательное.
 
 // const numbers = [12, -36, 14, -5, 62];
-
 
 // const isPositive = (number) => {
 
@@ -132,12 +120,10 @@
 //     }
 
 // }
-//   console.log(newNumbers);  
-
+//   console.log(newNumbers);
 
 // Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно больше нуля и меньше 10.
 // Если это так - пусть функция возвращает true, если не так - false.
-
 
 // const isNumberInRange = number => {
 //     if (number > 0 && number < 10) {
@@ -178,8 +164,6 @@
 //         : finalName || '';
 // }
 
-
-
 // console.log(list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}]));   //'Bart, Lisa, Maggie, Homer & Marge',"Must work with many names")
 // console.log(list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}])); //'Bart, Lisa & Maggie',"Must work with many names"
 // console.log(list([{name: 'Bart'},{name: 'Lisa'}])); // ( 'Bart & Lisa', "Must work with two names")
@@ -190,9 +174,7 @@
 // const result = [...mySet];
 // console.log(result);
 
-
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 
 //     function uniqueInOrder(iterable) {
 //   //your code here - remember iterable can be a string or an array
@@ -207,10 +189,7 @@
 //   return result
 // }
 
-
-
 // console.log(uniqueInOrder('AAAABBBCCDAABBB')); //['A','B','C','D','A','B'];
-
 
 // const fn = function () {
 //   console.log("result");
@@ -335,12 +314,10 @@
 // function squareDigits(num) {
 //     return +num.toString().split('').map(value => Math.pow(value, 2)).join('');
 
-
 // }
 // console.log(squareDigits(3212));// 9414
 // console.log(squareDigits(2112));//4114
 // console.log(squareDigits(0));// 0
-
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -357,13 +334,8 @@
 //     return Math.pow(n, 3);
 // }
 
-
-
-
 // console.log(rowSumOddNumbers(1));  //1);
 // console.log(rowSumOddNumbers(42));// 74088);
-
-
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -419,7 +391,6 @@
 
 // хххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
 
-
 // Build a function that returns an array of integers from n to 1 where n>0.
 
 // Example : n=5 --> [5,4,3,2,1]
@@ -438,9 +409,7 @@
 
 // console.log(reverseSeq(5)); // [5, 4, 3, 2, 1]
 
-
 // ххххххххххххххххххххххххххххххххххххххххх
-
 
 // function removeChar(str) {
 //     //You got this!
@@ -449,7 +418,6 @@
 //     return str.slice(1, -1);
 
 // };
-
 
 // removeChar('eloquent');// 'loquen');
 // removeChar('country');// 'ountr');
@@ -462,21 +430,16 @@
 // // Take 2 strings s1 and s2 including only letters from a to z.Return a new sorted string, the longest possible,
 // //     containing distinct letters - each taken only once - coming from s1 or s2.
 
-
 // function longest(s1, s2) {
 //     const strArr = s1.split('');
 //     const strArr1 = s2.split('')
 //     return [...strArr, ...strArr1].sort().filter((el, index, array) => array.indexOf(el) === index).join('')
-
-
-
 
 // }
 
 // longest("aretheyhere", "yestheyarehere");// "aehrsty")
 // longest("loopingisfunbutdangerous", "lessdangerousthancoding");// "abcdefghilnoprstu")
 // longest("inmanylanguages", "theresapairoffunctions");// "acefghilmnoprstuy")
-
 
 // xxxxxxxxxxxxxxxxxxxxxxx  or xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -497,9 +460,70 @@
 //     return /(^\d{4}$)|(^\d{6}$)/.test(pin);
 // }
 
-
-
 // console.log(validatePIN("1234")); //true, "Wrong output for '1234'");
 // console.log(validatePIN("1234567")); //false, "Wrong output for '1234567'")
 // console.log(validatePIN("-1.234")); //false, "Wrong output for '-1.234'")
 
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// // Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+// function digital_root(n) {
+//   // console.log(String(n).split('').reduce((acc, el) => +acc + + el));
+//   const number = String(n)
+//     .split('')
+//     .reduce((acc, el) => +acc + +el, 0);
+//   //   console.log(number);
+//   let sum = 0;
+
+//   if (number > 9) {
+//     sum = String(number)
+//       .split('')
+//       .reduce((acc, el) => +acc + +el, 0);
+//     return +sum;
+//   } else {
+//     return +number;
+//   }
+// }
+
+// // const digital_root = n => {
+// //   return n !== 0 && n % 9 === 0 ? 9 : n % 9;
+// // };
+
+// console.log(digital_root(16)); //7 ) 16  -->  1 + 6 = 7
+// console.log(digital_root(456)); // 6  )942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+// console.log(digital_root(228));
+// console.log(digital_root(0));
+
+// ххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
+
+// Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
+
+// Note: a and b are not ordered!
+// function getSum( a,b ) {
+//     let lower, higher;
+//     let result = 0;
+//     //return either of it if they are equal
+//     if(a == b) {
+//         return a;
+//     } else {
+//         if(a > b) {
+//             higher = a;
+//             lower = b;
+//         } else {
+//             higher = b;
+//             lower = a;
+//         }
+//         for(i = lower; i <= higher; i++) {
+//             result += i;
+//         }
+//     }
+//     return result;
+
+// };
+
+// console.log(getSum(0,-1)); //-1);
+// console.log(getSum(0,1)); //1);
+
+// console.log(getSum(-1,3)); //5);
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
