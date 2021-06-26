@@ -566,20 +566,112 @@
 // You are given an array(which will have a length of at least 3, but could be very large) containing integers.The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N.Write a method that takes the array
 // as an argument and returns this "outlier" N.
 
-function findOutlier(integers) {
-  const oddArray = [];
-  const evenArray = [];
-  for (let integer of integers) {
-    if (integer % 2 === 0) {
-      evenArray.push(integer);
-    } else {
-      oddArray.push(integer);
-    }
+// function findOutlier(integers) {
+//   const oddArray = [];
+//   const evenArray = [];
+//   for (let integer of integers) {
+//     if (integer % 2 === 0) {
+//       evenArray.push(integer);
+//     } else {
+//       oddArray.push(integer);
+//     }
+//   }
+//   return oddArray.length === 1 ? oddArray[0] : evenArray[0];
+// }
+// console.log(findOutlier([0, 1, 2])); //, 1)
+// console.log(findOutlier([1, 2, 3])); // 2)
+// console.log(findOutlier([2, 6, 8, 10, 3])); //3)
+// console.log(findOutlier([0, 0, 3, 0, 0])); // 3,
+// console.log(findOutlier([1, 1, 0, 1, 1])); //0);
+
+// Create a function that returns the name of the winner in a fight between two fighters.
+
+// Each fighter takes turns attacking the other and whoever kills the other first is victorious. Death is defined as having health <= 0.
+
+// Each fighter will be a Fighter object/instance. See the Fighter class below in your chosen language.
+
+// Both health and damagePerAttack (damage_per_attack for python) will be integers larger than 0. You can mutate the Fighter objects.
+
+// function Fighter(name, health, damagePerAttack) {
+//     this.name = name;
+//     this.health = health;
+//     this.damagePerAttack = damagePerAttack;
+//     this.toString = function () {
+//       return this.name;
+//     };
+//   }
+//   const declareWinner = (fighter1, fighter2, firstAttacker) => {
+//     const a = [fighter1, fighter2].find((v) => v.name === firstAttacker);
+//     const b = [fighter1, fighter2].find((v) => v.name !== firstAttacker);
+
+//     return Math.ceil(b.health / a.damagePerAttack) <= Math.ceil(a.health / b.damagePerAttack) ? a.name : b.name;
+//   };
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// всім перші букви перевести у верхній регістр
+// String.prototype.toJadenCase = function () {
+//     return this.split(" ")
+//         .map(function (word) {
+//     return word.charAt(0).toUpperCase() + word.slice(1);
+//         })
+//         .join(" ");
+// }
+// var str = "How can mirrors be real if our eyes aren't real";
+// console.log(str.toJadenCase())
+
+// ххххххххххххххххххххххххххххххххххххх
+
+// Your task is to make function, which returns the sum of a sequence of integers.
+
+// The sequence is defined by 3 non-negative values: begin, end, step.
+
+// If begin value is greater than the end, function should returns 0
+
+// const sequenceSum = (begin, end, step) => {
+//   let total = 0;
+//   for (let i = begin; i <= end; i += step) {
+//     if (begin > end) {
+//       return 0;
+//     } else {
+//       total += i;
+//     }
+//   }
+//   return total;
+// };
+
+// console.log(sequenceSum(2, 2, 2)); //2
+// console.log(sequenceSum(2, 6, 2)); //12
+// console.log(sequenceSum(1, 5, 1)); //15
+// console.log(sequenceSum(1, 5, 3)); //5
+// console.log(sequenceSum(5, 0, 3)); //0
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// // Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits. For example:
+
+// function sumDigits(number) {
+//   return Math.abs(number)
+//     .toString()
+//     .split("")
+//     .reduce((acc, total) => +acc + +total, 0);
+// }
+
+// console.log(sumDigits(10)); //1
+// console.log(sumDigits(99)); //18
+// console.log(sumDigits(-32)); //5
+// console.log(sumDigits(256)); //
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+function getDivisorsCnt(n) {
+  let cnt = 0;
+  for (let i = 1; i <= n; i++) {
+    if (!(n % i)) cnt += 1;
   }
-  return oddArray.length === 1 ? oddArray[0] : evenArray[0];
+  return cnt;
 }
-console.log(findOutlier([0, 1, 2])); //, 1)
-console.log(findOutlier([1, 2, 3])); // 2)
-console.log(findOutlier([2, 6, 8, 10, 3])); //3)
-console.log(findOutlier([0, 0, 3, 0, 0])); // 3,
-console.log(findOutlier([1, 1, 0, 1, 1])); //0);
+console.log(getDivisorsCnt(4)); //
+console.log(getDivisorsCnt(5));
+console.log(getDivisorsCnt(12));
+console.log(getDivisorsCnt(30));
