@@ -891,3 +891,17 @@
 // console.log(rowWeights([100, 51, 50, 100])); // [150,151]);
 // console.log(rowWeights([39, 84, 74, 18, 59, 72, 35, 61])); // [207,235]);
 // console.log(rowWeights([0, 1, 0])); // [0,1]);
+
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+// function solution(str, ending){
+//  // Первое решение
+// return str.indexOf(ending, str.length - ending.length) !== -1;
+// // второе решение
+// return str.endsWith(ending);
+
+// }
+
+// console.log(solution('abcde', 'cde')); // true
+// console.log(solution('abcde', 'abc')); // false
+// console.log(solution('sumo', 'omo')); // false
