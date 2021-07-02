@@ -905,3 +905,9 @@
 // console.log(solution('abcde', 'cde')); // true
 // console.log(solution('abcde', 'abc')); // false
 // console.log(solution('sumo', 'omo')); // false
+
+// for (let i = 0; i < 5; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 0);
+// }
