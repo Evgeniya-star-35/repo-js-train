@@ -258,7 +258,6 @@ const REGIONS = {
 
 const findCountryByRegion = (countries, region) =>
   countries.filter(country => country.region === region);
-// .map((country) => country.name);
 
 const countriesInEurope = findCountryByRegion(arr, REGIONS.EUROPE);
 
