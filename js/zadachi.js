@@ -911,3 +911,85 @@
 //     console.log(i);
 //   }, 0);
 // }
+
+// / xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// Given a 2D array of size m * n. Your task is to find the sum of minimum value in each row.
+
+// For Example:
+
+// [
+//   [1, 2, 3, 4, 5],       // minimum value of row is 1
+//   [5, 6, 7, 8, 9],       // minimum value of row is 5
+//   [20, 21, 34, 56, 100]  // minimum value of row is 20
+// ]
+
+// ===========================
+
+// Метод Math.min
+// Метод Math.min возвращает минимальное число из группы чисел, переданных параметрами.
+
+// Если параметрами ничего не передано, то будет возращено Infinity.
+
+// По умолчанию метод не работает с массивами, однако с помощью хитрого приема можно найти минимальное значение массива: Math.min.apply(null, arr), где arr - произвольный массив.
+
+// ================================
+
+// function sumOfMinimums(arr) {
+//   let total = 0;
+//   for (let i = 0; i < arr.length; i += 1) {
+//     let minJ = Math.min.apply(null, arr[i]);
+
+//     total += minJ;
+
+//     // }
+//   }
+//   // your code here
+//   return total;
+// }
+
+// console.log(
+//   sumOfMinimums([
+//     [7, 9, 8, 6, 2],
+//     [6, 3, 5, 4, 3],
+//     [5, 8, 7, 4, 5],
+//   ])
+// ); //9
+// console.log(
+//   sumOfMinimums([
+//     [11, 12, 14, 54],
+//     [67, 89, 90, 56],
+//     [7, 9, 4, 3],
+//     [9, 8, 6, 7],
+//   ])
+// ); //76
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// Modify the kebabize function so that it converts a camel case string into a kebab case.
+
+// kebabize('camelsHaveThreeHumps') // camels-have-three-humps
+// kebabize('camelsHave3Humps') // camels-have-humps
+// Notes:
+
+// the returned string should only contain lowercase letters
+
+// function kebabize(str) {
+//   return str
+//     .replace(/[0-9]/g, '')
+//     .split(/(?=[A-Z])/)
+//     .join('-')
+//     .toLowerCase();
+// }
+// console.log(kebabize('myCamelCasedString')); //, 'my-camel-cased-string');
+// kebabize('myCamelHas3Humps'); // 'my-camel-has-humps');
+
+//  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// Оператор запятая выполняет каждый из его операндов (слева направо) и возвращает значение последнего операнда.
+
+// let x = 1;
+
+// x = (x++, x);
+
+// console.log(x);

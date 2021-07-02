@@ -233,17 +233,17 @@
 
 // // console.log(findBorders("Switzerland", arr));
 
-async function getData() {
-  let result = null;
-  let response = await fetch('https://restcountries.eu/rest/v2/all');
-  result = await response.json();
-  return result;
-}
+// async function getData() {
+//   let result = null;
+//   let response = await fetch('https://restcountries.eu/rest/v2/all');
+//   result = await response.json();
+//   return result;
+// }
 
-// getData().then((data) => localStorage.setItem("arr", JSON.stringify(data)));
+// // getData().then((data) => localStorage.setItem("arr", JSON.stringify(data)));
 
-const arr = JSON.parse(localStorage.getItem('arr'));
-console.log(arr);
+// const arr = JSON.parse(localStorage.getItem('arr'));
+// console.log(arr);
 
 // Получить стрыны из региона Europe
 // Получить название самой большой страни в Европе
@@ -251,41 +251,41 @@ console.log(arr);
 // Получить список стран с которыми граничит Швейцария (Switzerland)
 // Получить процент который занимает  Австрия  в мире
 
-const REGIONS = {
-  EUROPE: 'Europe',
-  ASIA: 'Asia',
-};
+// const REGIONS = {
+//   EUROPE: 'Europe',
+//   ASIA: 'Asia',
+// };
 
-const findCountryByRegion = (countries, region) =>
-  countries.filter(country => country.region === region);
+// const findCountryByRegion = (countries, region) =>
+//   countries.filter(country => country.region === region);
 
-const countriesInEurope = findCountryByRegion(arr, REGIONS.EUROPE);
+// const countriesInEurope = findCountryByRegion(arr, REGIONS.EUROPE);
 
-const findLargestAndSmallestCountries = countries => {
-  const sortedCouytriesList = [...countries].sort((a, b) => b.area - a.area);
-  return {
-    max: sortedCouytriesList[0],
-    min: sortedCouytriesList[sortedCouytriesList.length - 1],
-  };
-};
+// const findLargestAndSmallestCountries = countries => {
+//   const sortedCouytriesList = [...countries].sort((a, b) => b.area - a.area);
+//   return {
+//     max: sortedCouytriesList[0],
+//     min: sortedCouytriesList[sortedCouytriesList.length - 1],
+//   };
+// };
 
-console.log(`result `, findCountryByRegion(arr, REGIONS.EUROPE));
-console.log(
-  'min and max countries',
-  findLargestAndSmallestCountries(countriesInEurope),
-);
+// console.log(`result `, findCountryByRegion(arr, REGIONS.EUROPE));
+// console.log(
+//   'min and max countries',
+//   findLargestAndSmallestCountries(countriesInEurope),
+// );
 
-const findCountryByName = (contryName, countries) =>
-  countries.find(country => country.name === contryName);
+// const findCountryByName = (contryName, countries) =>
+//   countries.find(country => country.name === contryName);
 
-const borders = findCountryByName('Switzerland', arr).borders;
+// const borders = findCountryByName('Switzerland', arr).borders;
 
-const bordersCountries = (countries, borders) =>
-  countries
-    .filter(country => borders.includes(country.alpha3Code))
-    .map(country => country.name);
+// const bordersCountries = (countries, borders) =>
+//   countries
+//     .filter(country => borders.includes(country.alpha3Code))
+//     .map(country => country.name);
 
-console.log(`bordersCountries`, bordersCountries(countriesInEurope, borders));
+// console.log(`bordersCountries`, bordersCountries(countriesInEurope, borders));
 // function findBorders(countryName, countryArray) {
 //   const countryCode = countryArray.find(
 //     (el) => el.name === countryName
