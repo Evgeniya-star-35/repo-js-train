@@ -993,3 +993,75 @@
 // x = (x++, x);
 
 // console.log(x);
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// / Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+// //* Проверьте, есть ли в строке одинаковое количество символов «x» и «o». Метод должен возвращать логическое значение и не учитывать регистр. Строка может содержать любой символ.
+
+// function XO(str) {
+//   const x = [];
+//   const o = [];
+
+//   let first = str.toLowerCase().split("");
+//   //   console.log(first);
+
+//   for (let i = 0; i < first.length; i += 1) {
+//     // console.log(first[i]);
+
+//     if (first[i] === "x") {
+//       x.push(first[i]);
+//     } else if (first[i] === "o") {
+//       o.push(first[i]);
+//     }
+//   }
+//   return x.length === o.length ? true : false;
+// }
+
+// console.log(XO("xo")); //true
+// console.log(XO("xxOo")); //true
+// console.log(XO("xxxm")); // false
+// console.log(XO("Oo")); // false
+// console.log(XO("ooom")); // false
+
+// function F() {
+//   return F;
+// }
+
+// alert(new F() instanceof F);
+// alert(new F() instanceof Function);
+
+// f.call(null);
+
+// function f() {
+//   alert(this);
+// }
+// const num = 0 || '' || 2 || undefined || true || falsе;
+// console.log(num);
+
+// for (let i = 0; i < 10; i++) {
+//   setTimeout(function () {
+//     alert(i);
+//   }, 100);
+// }
+// const arr = [11, 33, 8, 9];
+// arr.reduce(function (prev, item) {
+//   console.log(Math.max(prev, item));
+//   return Math.max(prev, item);
+// });
+// console.log(Math.max.apply(null, arr));
+// console.log(Math.max(11, 33, 8, 9));
+
+// console.log(arr.findMax());
+// function MyArray() {}
+// MyArray.prototype = [];
+
+// let arr = new MyArray();
+// arr.push(1, 2, 3);
+// alert(arr.length);
+
+// function g() {
+//   return 23;
+// }
+
+// alert(typeof g);
