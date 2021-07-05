@@ -1065,3 +1065,35 @@
 // }
 
 // alert(typeof g);
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
+
+// In this Kata, you will be given a string that may have mixed uppercase and lowercase letters and your task is to convert that string to either lowercase only or uppercase only based on:
+
+// make as few changes as possible.
+// if the string contains equal number of uppercase and lowercase letters, convert the string to lowercase.
+
+// В этом Ката вам будет предоставлена строка, которая может содержать смешанные прописные и строчные буквы, и ваша задача состоит в том, чтобы преобразовать эту строку либо только в нижний регистр, либо только в верхний регистр на основе:
+
+// сделайте как можно меньше изменений.
+// если строка содержит одинаковое количество прописных и строчных букв, преобразовать строку в строчные.
+
+// function solve(s) {
+//   let upper = [];
+//   let lower = [];
+
+//   for (let i = 0; i < s.length; i += 1) {
+//     if (s[i] === s[i].toUpperCase()) {
+//       upper += 1;
+//     } else {
+//       lower += 1;
+//     }
+//   }
+
+//   return lower < upper ? s.toUpperCase() : s.toLowerCase();
+// }
+
+// console.log(solve('code')); // "code";
+// console.log(solve('CODe')); // "CODE";
+// console.log(solve('COde')); // "code";
+// console.log(solve('Code')); // "code";
