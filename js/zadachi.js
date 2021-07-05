@@ -1097,3 +1097,23 @@
 // console.log(solve('CODe')); // "CODE";
 // console.log(solve('COde')); // "code";
 // console.log(solve('Code')); // "code";
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+// Завершите функцию, которая принимает строковый параметр и переворачивает каждое слово в строке. Все пробелы в строке следует сохранить.
+
+// function reverseWords(str) {
+//   return str.split("").reverse().join("").split(" ").reverse().join(" ");
+// }
+
+// 2 variant
+// function reverseWords(str) {
+//     return str.split(' ').map(a => a.split('').reverse().join('')).join(' ')
+//   }
+
+// console.log(reverseWords("The quick brown fox jumps over the lazy dog.")); // 'ehT kciuq nworb xof spmuj revo eht yzal .god');
+// console.log(reverseWords("apple")); //'elppa');
+// console.log(reverseWords("a b c d")); // 'a b c d');
+// console.log(reverseWords("double  spaced  words")); // 'elbuod  decaps  sdrow');
