@@ -1117,3 +1117,159 @@
 // console.log(reverseWords("apple")); //'elppa');
 // console.log(reverseWords("a b c d")); // 'a b c d');
 // console.log(reverseWords("double  spaced  words")); // 'elbuod  decaps  sdrow');
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// Introduction
+// Welcome Adventurer. Your aim is to navigate the maze and reach the finish point without touching any walls. Doing so will kill you instantly!
+// Task
+// You will be given a 2D array of the maze and an array of directions. Your task is to follow the directions given. If you reach the end point before all your moves have gone, you should return Finish. If you hit any walls or go outside the maze border, you should return Dead. If you find yourself still in the maze after using all the moves, you should return Lost.
+// The Maze array will look like
+
+// maze = [[1,1,1,1,1,1,1],
+//         [1,0,0,0,0,0,3],
+//         [1,0,1,0,1,0,1],
+//         [0,0,1,0,0,0,1],
+//         [1,0,1,0,1,0,1],
+//         [1,0,0,0,0,0,1],
+//         [1,2,1,0,1,0,1]]
+// ..with the following key
+
+//       0 = Safe place to walk
+//       1 = Wall
+//       2 = Start Point
+//       3 = Finish Point
+//   direction = ["N","N","N","N","N","E","E","E","E","E"] == "Finish"
+// Rules
+// 1. The Maze array will always be square i.e. N x N but its size and content will alter from test to test.
+
+// 2. The start and finish positions will change for the final tests.
+
+// 3. The directions array will always be in upper case and will be in the format of N = North, E = East, W = West and S = South.
+
+// 4. If you reach the end point before all your moves have gone, you should return Finish.
+
+// 5. If you hit any walls or go outside the maze border, you should return Dead.
+
+// 6. If you find yourself still in the maze after using all the moves, you should return Lost.
+
+// function mazeRunner(maze, directions) {
+
+//   let x = 0;
+//   let y = 0;
+//   for (let i = 0; i < maze.length; i += 1) {
+//     if (maze[i].indexOf(2) != -1) {
+//       x = i;
+//       y = maze[i].indexOf(2);
+//     }
+//   }
+//   for (let k = 0; k < directions.length; k += 1) {
+//     if (directions[k] == 'N') {
+//       x -= 1;
+//     }
+//     if (directions[k] == 'S') {
+//       x += 1;
+//     }
+//     if (directions[k] == 'E') {
+//       y += 1;
+//     }
+//     if (directions[k] == 'W') {
+//       y -= 1;
+//     }
+//     if (maze[x] === undefined || maze[y] === undefined) {
+//       return 'Dead';
+//     }
+//     if (maze[x][y] === 1) {
+//       return 'Dead';
+//     } else if (maze[x][y] === 3) {
+//       return 'Finish';
+//     }
+//   }
+
+//   return 'Lost';
+// }
+// var maze = [
+//   [1, 1, 1, 1, 1, 1, 1],
+//   [1, 0, 0, 0, 0, 0, 3],
+//   [1, 0, 1, 0, 1, 0, 1],
+//   [0, 0, 1, 0, 0, 0, 1],
+//   [1, 0, 1, 0, 1, 0, 1],
+//   [1, 0, 0, 0, 0, 0, 1],
+//   [1, 2, 1, 0, 1, 0, 1],
+// ];
+
+// console.log(
+//   mazeRunner(maze, ['N', 'N', 'N', 'N', 'N', 'E', 'E', 'E', 'E', 'E']),
+// ); // "Finish", "Expected Finish");
+// console.log(
+//   mazeRunner(maze, [
+//     'N',
+//     'N',
+//     'N',
+//     'N',
+//     'N',
+//     'E',
+//     'E',
+//     'S',
+//     'S',
+//     'E',
+//     'E',
+//     'N',
+//     'N',
+//     'E',
+//   ]),
+// ); // "Finish", "Expected Finish");
+// console.log(
+//   mazeRunner(maze, [
+//     'N',
+//     'N',
+//     'N',
+//     'N',
+//     'N',
+//     'E',
+//     'E',
+//     'E',
+//     'E',
+//     'E',
+//     'W',
+//     'W',
+//   ]),
+// ); // "Finish", "Expected Finish");
+
+// console.log(mazeRunner(maze, ['N', 'N', 'N', 'W', 'W'])); // "Dead", "Expected Dead");
+// console.log(
+//   mazeRunner(maze, [
+//     'N',
+//     'N',
+//     'N',
+//     'N',
+//     'N',
+//     'E',
+//     'E',
+//     'S',
+//     'S',
+//     'S',
+//     'S',
+//     'S',
+//     'S',
+//   ]),
+// ); //"Dead", "Expected Dead");
+
+// console.log(mazeRunner(maze, ['N', 'E', 'E', 'E', 'E'])); // "Lost", "Expected Lost");
+
+// Изограмма - это слово, в котором нет повторяющихся букв, последовательных или непоследовательных.
+// Реализуйте функцию, которая определяет, является ли строка, содержащая только буквы, изограммой.
+// Предположим, что пустая строка является изограммой. Игнорировать регистр букв.
+// /ab+c/i;
+// function isIsogram(str){
+
+//     // return !/(.).*\1|\d/i.test(str);
+
+//     return new Set(str.toUpperCase()).size == str.length;
+//     };
+
+// console.log(isIsogram("isogram")); // true );
+// console.log(isIsogram("aba")); // false, "same chars may not be adjacent" );
+// console.log(isIsogram("moOse")); // false, "same chars may not be same case" );
+// console.log(isIsogram("Dermatoglyphics")); // true );
+// console.log(isIsogram("isIsogram")); // false );
+// console.log(isIsogram("")); // true, "an empty string is a valid isogram" );
