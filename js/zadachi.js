@@ -1273,3 +1273,18 @@
 // console.log(isIsogram("Dermatoglyphics")); // true );
 // console.log(isIsogram("isIsogram")); // false );
 // console.log(isIsogram("")); // true, "an empty string is a valid isogram" );
+//   хххххххххххххххххххххххххххххххх   таблица умножения хххххххххххххххххххххххххххххххххххх
+
+// let oneRow = '';
+// function multiply() {
+//   for (let i = 1; i <= 10; i += 1) {
+//     for (let j = 0; j <= 10; j += 1) {
+//       oneRow += j * i + ' ';
+//     }
+//     console.table(i + ' x');
+//     console.table(oneRow);
+//     oneRow = '';
+//   }
+// }
+
+// multiply();
