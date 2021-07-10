@@ -1288,3 +1288,36 @@
 // }
 
 // multiply();
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  пролистывание изображений в модальном окне по клавише "влево" и "вправо" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// window.addEventListener('keydown', e => {
+//   if (e.code === 'ArrowLeft') {
+//     onArrowLeft();
+//   }
+//   if (e.code === 'ArrowRight') {
+//     onArrowRight();
+//   }
+// });
+
+// function onArrowLeft() {
+//   let index = +modalImgRef.dataset.index;
+//   if (index === 0) {
+//     newSrc(galleryItems.length - 1);
+//     return;
+//   }
+//   newSrc(index, -1);
+// }
+// function onArrowRight() {
+//   let index = +modalImgRef.dataset.index;
+//   if (index === galleryItems.length - 1) {
+//     newSrc(0);
+//     return;
+//   }
+//   newSrc(index, 1);
+// }
+
+// function newSrc(index, step = 0) {
+//   modalImgRef.dataset.index = `${index + step}`;
+//   modalImgRef.src = galleryItems[index + step].original;
+// }
+// ххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
