@@ -20,3 +20,22 @@ function onTagsContainerClick(e) {
   selectedTag = nextActiveBtn.dataset.value;
   console.log(selectedTag);
 }
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//чтобы можно было выбрать несколько кнопок
+const tagCont = document.querySelector('.js-tags');
+
+function onTagsContainClick(e) {
+  if (e.target.nodeName !== 'BUTTON') {
+    return;
+  }
+  const btn = e.target;
+  const tag = btn.dataset.value;
+  const isActive = btn.classList.contains('tag__btn--active');
+
+  if (isActive) {
+    selectedTag.delete(tag);
+  } else {
+    selectedTag.add(tag);
+  }
+  btn.classList.toggle('tag__btn--active');
+}
