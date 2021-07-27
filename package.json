@@ -1,0 +1,24 @@
+{
+  "name": "repo-js-train",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgeniya-star-35/repo-js-train.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evgeniya-star-35/repo-js-train/issues"
+  },
+  "homepage": "https://github.com/Evgeniya-star-35/repo-js-train#readme",
+  "devDependencies": {
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
