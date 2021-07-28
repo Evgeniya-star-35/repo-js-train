@@ -91,3 +91,12 @@ console.log(localeUk); // понеділок, 19 бер. 2018 р., 17:42
 // USA
 const localeUs = date.toLocaleString('en-US', options);
 console.log(localeUs); // Monday, Mar 19, 2018, 5:43 PM
+
+// ххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх
+let a = false;
+if (a == '0') {
+  console.log('==');
+}
+if (a === '0') {
+  console.log('===');
+}
