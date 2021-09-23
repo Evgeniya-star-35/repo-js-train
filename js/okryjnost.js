@@ -10,3 +10,9 @@ console.log(circleLength(5));
 console.log(circleLength(12));
 // задача:
 // Функция circleLength должна возвращать длину круга с учетом радиуса<--- Вот єтот вопрос надо решить
+let b = 20;
+
+if (true) {
+  console.log(b);
+  let b = 10;
+}
